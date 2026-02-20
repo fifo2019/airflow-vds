@@ -6,7 +6,7 @@ def hello():
     print("Hello, Airflow!")
 
 with DAG(
-    dag_id="simple_dag!!!!",
+    dag_id="simple_dag",
     start_date=datetime(2024, 1, 1),
     schedule="@daily",   # запуск каждый день
     catchup=False,
