@@ -37,11 +37,11 @@ def get_green_trip(**context):
 
 
 with DAG(
-    dag_id="custom_dag",
+    dag_id="simple_pipeline",
     start_date=datetime(2024, 1, 1),
     end_date=datetime(2025, 12, 1),
-    # schedule="@monthly",   # запуск каждый день
-    schedule="@once",   # запуск каждый день
+    schedule="@monthly",   # запуск каждый день
+    # schedule="@once",   # запуск каждый день
     catchup=True,
     tags=["example"],
 ) as dag:
