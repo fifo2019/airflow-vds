@@ -43,6 +43,7 @@ with DAG(
     schedule="@monthly",   # запуск каждый день
     # schedule="@once",   # запуск каждый день
     catchup=True,
+    max_active_runs=1,
     tags=["example"],
 ) as dag:
 
